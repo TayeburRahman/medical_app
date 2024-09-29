@@ -83,8 +83,8 @@ app.use(globalErrorHandler);
 
 const main = async () => {
   await connectDB()
-  server.listen(port,process.env.LOCAL_CLIENT, () => {
-    console.log(`Server is running on port http://192.168.10.152:${port}`);
+  server.listen(port, () => {
+    console.log(`Server is running on port http://localhost:${port}`);
   });
 }
 main()
